@@ -2,20 +2,19 @@
     height: 105px;
 }
 
-#navigate3{
-    width: 76%;
+#navigate3 {
+    width: 72.8%;
+    padding-left: 2.2rem;
+    padding-right: 4rem;
 }
 
-.nav-link{
+#setme {
     font-family: Arial, "Helvetica", sans-serif;
     font-weight: 600;
     color: black;
     font-size: 0.9em;
-}
-
-#setme{
-    padding-right: 2.3rem;
-    padding-left: 1.5rem;
+    padding-right: 1.3rem;
+    padding-left: 1.7rem;
 }
 
 #setme2{
@@ -30,4 +29,9 @@
 
 #social{
     margin-left: -2rem;
+}
+
+#lowfoot{
+    padding-left: 3rem;
+    padding-right: 2rem;
 }
