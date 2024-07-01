@@ -1,0 +1,107 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  }
+  
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: var(#f8f7f4, #fff);
+}
+
+header {
+  background-color: var(#f8f7f4, #fff);
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li button {
+  padding: 10px 20px;
+  border: none;
+  background: #0073e6;
+  color: white;
+  cursor: pointer;
+}
+
+header nav ul li button:hover {
+  background: #005bb5;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.suggestions {
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  width: 300px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.suggestion-item:hover {
+  background: #f0f0f0;
+}
+
+aside {
+  background: #f8f8f8;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside ul li {
+  margin: 10px 0;
+}
+
+aside ul li button {
+  padding: 10px 20px;
+  border: none;
+  background: #0073e6;
+  color: white;
+  cursor: pointer;
+}
+
+aside ul li button:hover {
+  background: #005bb5;
+}

@@ -1,0 +1,52 @@
+.card-img-top{
+    border-radius: 10px;
+}
+
+#mycard{
+    margin-left: -0.8rem;
+    margin-top: -0.5rem;
+}
+
+.card{
+    border: none;
+}
+
+.card-title{
+    width: 66%;
+}
+
+#likes{
+    margin-top: 0.05rem;
+}
+
+h6{
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+    color: grey;
+    font-weight: 400;
+    font-family: Arial, "Helvetica", sans-serif;
+}
+
+/* ImageCard.css */
+.icon-like {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icon-like.liked {
+    color: #ea64d9;
+}
+  
+.icon-like.unliked {
+    color: grey;
+}
+
+.icon-like:hover {
+    color:#ea64d9;
+}
+
+.icon-like:active{
+    transform: scale(2);
+}
+  
