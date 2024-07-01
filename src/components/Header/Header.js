@@ -9,7 +9,7 @@ const Header = ({ setFilter, setSearchQuery }) => {
 
     <header id='myhead' className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
       
-      <ul id='navigate' className="nav col-md-4 ms-lg-3 mb-2 mb-md-0 ">
+      <ul id='navigate' className="nav col-md-5 ms-lg-3 mb-2 mb-md-0 ">
       <div class="btn-group">
         <button type="button" class="btn dropdown-toggle mybtn" data-bs-toggle="dropdown" aria-expanded="false">Find Designers</button>
         <ul class="dropdown-menu dropdown-menu-end">
@@ -18,7 +18,7 @@ const Header = ({ setFilter, setSearchQuery }) => {
           <li><button class="dropdown-item" type="button">Something else here</button></li>
         </ul>
       </div>
-        <li><a href="#" className="nav-link px-2 mybtn">Inspiration</a></li>
+        <li><a href="#" className="mynav nav-link px-2 mybtn">Inspiration</a></li>
         <div class="btn-group">
         <button type="button" class="btn dropdown-toggle mybtn" data-bs-toggle="dropdown" aria-expanded="false">Courses</button>
         <ul class="dropdown-menu dropdown-menu-end">
@@ -27,8 +27,8 @@ const Header = ({ setFilter, setSearchQuery }) => {
           <li><button class="dropdown-item" type="button">Something else here</button></li>
         </ul>
       </div>
-        <li><a href="#" className="nav-link px-2 mybtn">Jobs</a></li>
-        <li><a href="#" className="nav-link px-2 mybtn">Go Pro</a></li>
+        <li><a href="#" className="mynav nav-link px-2 mybtn">Jobs</a></li>
+        <li><a href="#" className="mynav nav-link px-2 mybtn">Go Pro</a></li>
       </ul>
       
       <div className="nav col-12 col-md-auto ms-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
