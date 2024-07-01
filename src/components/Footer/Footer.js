@@ -57,3 +57,4 @@ const Footer = ({ setFilter, setSearchQuery }) => {
 };
 
 export default Footer;
+
