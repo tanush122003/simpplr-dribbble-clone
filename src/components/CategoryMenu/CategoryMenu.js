@@ -1,7 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../CategoryMenu/Category.css'
 
 const CategoryMenu = ({ setCategory }) => {
+
+  const [showFilters, setShowFilters] = useState(false);
+
+  const toggleFilters = () => {
+    setShowFilters(!showFilters);
+  };
+
   return (
       <div id='category' className='ms-lg-4 me-lg-4'>
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between ms-lg-5 me-lg-5 py-4 head2">
@@ -29,9 +36,31 @@ const CategoryMenu = ({ setCategory }) => {
       </ul>
 
       <div class="col-md-1 text-start">
-        <button id='btn3' type="button" class="btn">☰&nbsp;&nbsp;Filters</button>
+        <button id='btn3' type="button" onClick={toggleFilters} class="btn">☰&nbsp;&nbsp;Filters</button>
       </div>
+
     </header>
+
+    <div className={`filters-container ${showFilters ? 'show' : ''}`}>
+    <div className="d-flex gap-4 mt-1 pb-4 justify-content-center">
+      <div id='tags'>
+        <h5 id='display'>Tags</h5>
+    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..."/>
+      <datalist id="datalistOptions">
+        <option value="San Francisco"/>
+        <option value="New York"/>
+        <option value="Seattle"/>
+        <option value="Los Angeles"/>
+        <option value="Chicago"/>
+      </datalist>
+      </div>
+      <div id='colors'>
+        <h5 id='display'>Color</h5>
+        <input type="color" class="form-control form-control-color w-100" id="exampleColorInput" value="#563d7c" title="Choose your color"></input>
+        </div>
+      </div>
+      </div>
+
   </div>
   );
 };
