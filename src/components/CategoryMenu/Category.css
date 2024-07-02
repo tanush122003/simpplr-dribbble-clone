@@ -49,3 +49,35 @@
 #mynav2{
     font-size: 0.92rem;
 }
+
+.filters-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.2s ease-out;
+    opacity: 0;
+  }
+  
+  .filters-container.show {
+    max-height: 500px; /* Adjust this value based on the height of your filters */
+    opacity: 1;
+  }
+
+  #tags,#colors{
+    width: 42.2rem;
+  }
+
+  #exampleDataList{
+    padding: 0.9rem;
+    border-radius: 0.7rem;
+  }
+
+  #exampleColorInput{
+    padding: 1.6rem;
+    border-radius: 0.7rem;
+  }
+
+  #display{
+    font-family: Arial, "Helvetica", sans-serif;
+    margin-left: -0.1rem;
+    font-size: 0.9rem;
+  }
